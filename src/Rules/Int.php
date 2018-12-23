@@ -20,7 +20,7 @@ class Int
 
         $_data = trim($data[$key]);
 
-        if(!is_int($_data))
+        if (!is_int($_data))
             throw new ValidationException($key . " must be an integer value");
 
     }

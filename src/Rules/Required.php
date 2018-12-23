@@ -8,7 +8,7 @@ class Required
 {
     public function validate($data, $key, $value = null)
     {
-        
+
         if (!isset($data[$key]))
             throw new ValidationException($key . " is required");
 

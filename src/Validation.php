@@ -1,6 +1,7 @@
 <?php
 
 namespace Karamel\Validation;
+
 use Karamel\Validation\Rules\CheckRule;
 
 class Validation
@@ -21,7 +22,7 @@ class Validation
                     $_role_name = $role_single[0];
                     $_role_value = null;
                 }
-                CheckRule::check($_role_name,$data,$key,$_role_value);
+                CheckRule::check($_role_name, $data, $key, $_role_value);
             }
         }
     }
